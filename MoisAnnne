@@ -1,0 +1,72 @@
+
+package moisannee;
+import java.util.Scanner;
+/**
+ *
+ * @author Francis
+ */
+public class MoisAnnee {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int i ;
+        System.out.println("Bonjour a vous !!!!");
+        System.out.println("Bienvenue dans mon programme");
+        System.out.println("Vous allez pouvoir faire un choix");
+        System.out.println("Taper un chiffre entre 1 et 12");
+        Scanner clavier = new Scanner(System.in);
+        int var = clavier.nextInt();
+        switch (var) {
+            case 1 :
+                System.out.println("Janvier");
+                break;
+            case 2 :
+                System.out.println("Février");
+                break;
+            case 3 :
+                System.out.println("Mars");
+                break;
+            case 4 :
+                System.out.println("Avril");
+                break;
+                
+            case 5 :
+                System.out.println("Mai");
+                break;
+                
+            case 6 : 
+                System.out.println("Juin");
+                break;
+                
+            case 7 :
+                System.out.println("Juillet");
+                break;
+            case 8 :
+                System.out.println("Aout");
+            case 9 :
+                System.out.println("Septembre");
+                break;
+            case 10 :
+                System.out.println("Octobre");
+                break;
+                
+            case 11 :
+                System.out.println("Novembre");
+                break;
+                
+            case 12 : 
+                System.out.println("Décembre");    
+                
+            default:
+                System.out.println("Cette sélection ne fait pas parti de vos choix");
+                
+        }
+        
+        
+        
+    } //fin main
+    
+} /// fin class
