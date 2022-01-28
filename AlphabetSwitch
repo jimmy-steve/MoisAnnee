@@ -1,0 +1,42 @@
+
+package AlphabetSwitch;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Francis
+ */
+public class AlphabetSwitch {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner clavier = new Scanner(System.in);
+        char lettre ; 
+        System.out.println("Bonjour a vous !!!!");
+        System.out.println("Bienvenue dans mon programme");
+        System.out.println("Vous allez pouvoir faire un choix");
+        System.out.println("Taper une lettre et on vous aidera");
+        
+        String str = clavier.nextLine();
+          str = str.toLowerCase();
+          lettre = str.charAt(0);
+           
+        
+        
+        switch (lettre) {
+            case 'a', 'o', 'i', 'y','u', 'e' :
+                System.out.println("Votre lettre est un voyelle");
+                
+                break;
+                
+            default:
+                System.out.println("Votre lettre est une consonne ");
+        }
+   
+    } // fin main
+    
+}// fin class
